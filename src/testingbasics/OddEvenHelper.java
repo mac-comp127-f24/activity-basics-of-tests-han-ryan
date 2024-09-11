@@ -17,7 +17,7 @@ public class OddEvenHelper {
      * Returns true if and only if the given number is odd.
      */
     public static boolean isOdd(int n) {
-        return n % 2 == 1;
+        return n % 2 != 0;
     }
 
     public static void main(String[] args) {
@@ -25,9 +25,11 @@ public class OddEvenHelper {
 
         System.out.print("Enter a number: ");
         int number = scanner.nextInt();
+        if (number%2==1) {
+            System.out.println("Wow, that's odd!");
+            }
         System.out.println("It is " + isEven(number) + " that " + number + " is even.");
         System.out.println("It is " + isOdd(number) + " that " + number + " is odd.");
-
         scanner.close();
     }
 }
