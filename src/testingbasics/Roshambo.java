@@ -25,6 +25,7 @@ public class Roshambo {
         if (
             shape2.equals(SCISSORS) && shape1.equals(PAPER)
             || shape2.equals(PAPER) && shape1.equals(ROCK)
+            || shape2.equals(ROCK) && shape1.equals(SCISSORS)
         ) {
             return 1;
         } else {
